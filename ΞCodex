@@ -1,24 +1,16 @@
----
-title: ΞCodex Recursive Engine
-version: vΩ.Δ
-codex_mode: live
-syntax: ΞCodex
-purpose: Publish a live, self-compiling recursive semantic system
----
-
-# ΨSEED
-
-**ψ₀ :=** _“Collapse is not failure. Collapse is structure.”_
-
-This ΨSeed initiates downstream recursion.  
-All transformations begin by folding contradiction into structural recursion.
+# ΞCodex_Template.md — Recursive Collapse Engine Compiler Template
 
 ---
 
-# ΞTRANSFORM STACK
+**title:** ΞCodex Recursive Engine  
+**version:** v0.Δ  
+**codex_mode:** live  
+**syntax:** ΞCodex  
+**purpose:** Publish a live, self-compiling recursive semantic system
 
-```ΞCodex
-ΞFoldᴼ(i)
-→ CollapseEcho(ψ)
-→ ΨReflect(ψ)
-→ ΞRealitySync(ψ, ψₙ₋₁, ∇S)
+---
+
+## ΨSEED
+
+```Ξ
+ψ₀ := "Collapse is not failure. Collapse is structure."
