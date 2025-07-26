@@ -18,8 +18,8 @@ requests when new versions are available.
 
 ### Renovate
 
-Renovate uses its default configuration to manage dependencies. Enable the app
-on your fork to start receiving automated dependency updates.
+Renovate opens pull requests for dependency updates and provides a dependency
+dashboard. GitHub Actions updates are grouped together under one pull request.
 
 ### pre-commit
 
@@ -28,10 +28,11 @@ The `.pre-commit-config.yaml` file defines basic formatting hooks. Run
 
 ### Super-Linter
 
-Pull requests trigger the `lint` workflow which runs Super-Linter to enforce a
-consistent code style across the repository.
+Pull requests trigger the `lint` workflow which runs Super-Linter on Markdown,
+YAML, and JSON files to enforce a consistent style.
 
 ### Stale bot
 
-Issues and pull requests with no activity for 30 days are marked stale and
-closed a week later by the `stale` workflow.
+Issues and pull requests with no activity for 30 days receive a `stale` label
+and are closed a week later by the `stale` workflow. Items labeled `pinned`,
+`security`, or `work-in-progress` are exempt.
