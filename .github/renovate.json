@@ -2,6 +2,7 @@
   "extends": ["config:base"],
   "dependencyDashboard": true,
   "prHourlyLimit": 2,
+  "stabilityDays": 3,
   "labels": ["dependencies"],
   "packageRules": [
     {

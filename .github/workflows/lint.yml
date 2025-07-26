@@ -14,10 +14,8 @@ jobs:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VALIDATE_ALL_CODEBASE: false
-          FILTER_REGEX_INCLUDE: |
-            ^README\.md$
-            ^\.github/.*
-            ^\.pre-commit-config\.yaml$
+          FILTER_REGEX_INCLUDE: ^(README\.md|\.github/.*|\.pre-commit-config\.yaml)$
+          VALIDATE_GITHUB_ACTIONS: true
           VALIDATE_MARKDOWN: true
           VALIDATE_YAML: true
           VALIDATE_JSON: true
