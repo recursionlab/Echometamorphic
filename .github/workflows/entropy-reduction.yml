@@ -1,0 +1,23 @@
+name: entropy-reduction
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/stale@v9
+        with:
+          stale-issue-message: |
+            This discussion has gone quiet as part of our entropy reduction efforts.
+            If there is no further activity, it will be automatically closed.
+          close-issue-message: |
+            Entropy reduced: closing this issue due to inactivity.
+          stale-pr-message: |
+            This pull request is stale and will be closed unless it is updated.
+          close-pr-message: |
+            Entropy reduced: closing this pull request. Feel free to reopen with updates.
+          days-before-stale: 30
+          days-before-close: 7
