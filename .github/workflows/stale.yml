@@ -17,8 +17,8 @@ jobs:
           close-pr-message: 'Closing this PR due to prolonged inactivity.'
           stale-issue-label: stale
           stale-pr-label: stale
-          exempt-issue-labels: pinned,security,work-in-progress,discussion,do-not-close
-          exempt-pr-labels: pinned,security,work-in-progress,discussion,do-not-close
+          exempt-issue-labels: pinned,security,work-in-progress,discussion,awaiting-feedback,do-not-close
+          exempt-pr-labels: pinned,security,work-in-progress,discussion,awaiting-feedback,do-not-close
           remove-stale-when-updated: true
           days-before-stale: 30
           days-before-close: 7

@@ -25,8 +25,9 @@ workflows current.
 ### Renovate
 
 Renovate manages other dependencies. The `renovate.json` file groups GitHub
-Actions updates into a single pull request and automatically merges minor and
-patch updates after tests pass. A dependency dashboard tracks open updates.
+Actions and Python package updates into separate pull requests. Minor and patch
+updates merge automatically once tests pass. A dependency dashboard tracks open
+updates.
 
 ### pre-commit
 
@@ -36,7 +37,7 @@ can run all hooks manually with `pre-commit run --all-files`.
 
 ### Super-Linter
 
-Pull requests trigger the `lint` workflow which runs Super-Linter only on
+Pull requests trigger the `lint` workflow. Super-Linter checks only
 `README.md`, files in `.github`, and `.pre-commit-config.yaml`. Validation is
 limited to Markdown, YAML, and JSON to avoid noise from other linters.
 
@@ -44,5 +45,6 @@ limited to Markdown, YAML, and JSON to avoid noise from other linters.
 
 Issues and pull requests with no activity for 30 days receive a `stale` label
 and are closed a week later by the `stale` workflow. Items labeled `pinned`,
-`security`, `work-in-progress`, or `discussion` remain open. A warning comment
-is posted before something is closed.
+`security`, `work-in-progress`, `discussion`, `awaiting-feedback`, or
+`do-not-close` remain open. A warning comment is posted before something is
+closed.
