@@ -1,10 +1,16 @@
 {
   "extends": ["config:base"],
   "dependencyDashboard": true,
+  "prHourlyLimit": 2,
+  "labels": ["dependencies"],
   "packageRules": [
     {
       "matchManagers": ["github-actions"],
       "groupName": "github-actions"
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true
     }
   ]
 }

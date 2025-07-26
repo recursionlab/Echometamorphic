@@ -18,6 +18,10 @@ jobs:
             ^README\.md$
             ^\.github/.*
             ^\.pre-commit-config\.yaml$
-          VALIDATE_YAML: true
           VALIDATE_MARKDOWN: true
+          VALIDATE_YAML: true
           VALIDATE_JSON: true
+          VALIDATE_BASH: false
+          VALIDATE_PYTHON: false
+          VALIDATE_GO: false
+          VALIDATE_DOCKERFILE_HADOLINT: false
