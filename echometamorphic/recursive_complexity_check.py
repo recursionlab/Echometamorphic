@@ -14,7 +14,11 @@ def _node_depth(node: ast.AST, level: int = 0) -> int:
 
 def check_file(filename: str, max_depth: int = 10) -> int:
     with open(filename, "r", encoding="utf-8") as fh:
-        tree = ast.parse(fh.read(), filename=filename)
+        try:
+            tree = ast.parse(fh.read(), filename=filename)
+        except SyntaxError as err:
+            print(f"{filename}: failed to parse ({err})")
+            return 1
     depth = _node_depth(tree)
     if depth > max_depth:
         print(f"{filename}: recursive complexity {depth} > {max_depth}")
