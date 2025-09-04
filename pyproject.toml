@@ -7,7 +7,7 @@ name = "echometamorphic"
 version = "0.1.0"
 description = "Echometamorphic utilities"
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.10"
 
 [project.scripts]
 recursive_complexity_check = "echometamorphic.recursive_complexity_check:main"
